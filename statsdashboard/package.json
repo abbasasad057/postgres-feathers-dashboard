@@ -1,0 +1,54 @@
+{
+  "name": "postgres-stats",
+  "description": "This app displays realtime stats from postgres database",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "public",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "public",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && NODE_ENV= npm run mocha",
+    "eslint": "eslint public/. test/. --config .eslintrc.json",
+    "dev": "nodemon public/",
+    "start": "node public/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.6",
+    "@feathersjs/errors": "^3.3.6",
+    "@feathersjs/express": "^1.3.1",
+    "@feathersjs/feathers": "^3.3.1",
+    "@feathersjs/socketio": "^3.2.9",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "feathers-sequelize": "^4.1.1",
+    "helmet": "^3.19.0",
+    "pg": "^7.11.0",
+    "sequelize": "^4.44.2",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.19.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 3,
+    "max": 3
+  },
+  "postgres": "postgres://user:password:@server:port/databasename"
+}

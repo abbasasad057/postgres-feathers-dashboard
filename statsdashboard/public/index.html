@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/core-js/2.1.4/core.min.js"></script>
+    <script src="https://unpkg.com/@feathersjs/client@^3.0.0/dist/feathers.js"></script>
+    <script src="https://unpkg.com/socket.io-client@1.7.3/dist/socket.io.js"></script>
+    <script type="text/javascript" src="client_stats.js"></script>
+  </head>
+  <body>
+    <h1>PostgreSQL <span class="yellow">Dashboard</span></h1>
+<h2>TABLE STATS</h2>
+<table class="container" id="statstable">
+  <thead>
+    <tr>
+      <th><h1>Table Name</h1></th>
+      <th><h1>Old Count</h1></th>
+      <th><h1>Inserted</h1></th>
+      <th><h1>Updated</h1></th>
+      <th><h1>Deleted</h1></th>
+      <th><h1>Latest Count</h1></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Taxlots</td>
+      <td id='t111'>NA</td>
+      <td id='t112'>NA</td>
+      <td id='t113'>NA</td>
+      <td id='t114'>NA</td>
+      <td id='t115'>NA</td>
+    </tr>
+    <tr>
+      <td>Nuisance</td>
+      <td id='t121'>NA</td>
+      <td id='t122'>NA</td>
+      <td id='t123'>NA</td>
+      <td id='t124'>NA</td>
+      <td id='t125'>NA</td>
+    </tr>
+    
+  </tbody>
+</table>
+<h2 class='joblogs'>JOB LOGS</h2>
+<table class="container" id="statstable">
+  <thead>
+    <tr>
+      <th><h1>Job Name</h1></th>
+      <th><h1>Last Run</h1></th>
+      <th><h1>Next Run</h1></th>
+      <th><h1>Status</h1></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Backup Data</td>
+      <td id='t211'>NA</td>
+      <td id='t212'>NA</td>
+      <td id='t213'>NA</td>
+    </tr>
+    <tr>
+      <td>Scrape Data</td>
+      <td id='t221'>NA</td>
+      <td id='t222'>NA</td>
+      <td id='t223'>NA</td>
+    </tr>
+    <tr>
+      <td>Import Data</td>
+      <td id='t231'>NA</td>
+      <td id='t232'>NA</td>
+      <td id='t233'>NA</td>
+    </tr>
+  </tbody>
+</table>
+  </body>
+</html>
